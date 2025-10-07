@@ -3,7 +3,6 @@ import { Link } from 'react-router';
 
 const Book = ({book}) => {
     const {bookId, author, bookName, category, image, rating, tags, yearOfPublishing} = book;
-    console.log(book);
     return (
         <Link to={`/bookDetails/${bookId}`}>
             <div className="w-full card bg-base-100 mx-auto shadow-lg h-full p-5 border border-gray-200 ">
@@ -28,7 +27,7 @@ const Book = ({book}) => {
                         <p>{category}</p>
                         <div className='flex items-center gap-2'>
                             <p>{rating}</p>
-                            <i class="fa-regular fa-star"></i>
+                            <i className="fa-regular fa-star"></i>
                         </div>
                     </div>
                 </div>
